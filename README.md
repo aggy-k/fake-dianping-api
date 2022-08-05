@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API ENDPOINTS:
 
-Things you may want to cover:
+Restaurants:
+INDEX /api/v1/restaurants GET
+SHOW /api/v1/restaurants/:id GET
+CREATE /api/v1/restaurants POST
+UPDATE /api/v1/restaurants/:id PUT
+DESTROY /api/v1/restaurants/:id DELETE
 
-* Ruby version
+Reviews:
+INDEX /api/v1/restaurants/:restaurant_id/reviews GET
+CREATE /api/v1/restaurants/:restaurant_id/reviews POST
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+SHOW /api/v1/reviews/:id GET
+UPDATE /api/v1/reviews/:id PUT
+DESTROY /api/v1/reviews/:id DELETE
